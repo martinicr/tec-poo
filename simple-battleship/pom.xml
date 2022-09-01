@@ -112,7 +112,7 @@
             </execution>
           </executions>
           <configuration>
-            <mainClass>tec.poo.tareas.battleship.BattleshipGame</mainClass>
+            <mainClass>tec.poo.tareas.battleship.BattleshipApp</mainClass>
             <cleanupDaemonThreads>false</cleanupDaemonThreads>
           </configuration>
         </plugin>
