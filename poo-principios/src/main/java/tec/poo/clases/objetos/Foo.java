@@ -35,6 +35,8 @@ public class Foo {
 
     public static void aStaticMethod() {
 
+        System.out.println("metodo estatico");
+
         /* Desde aqui SE PUEDE invocar a
         privateStaticMethod();
         u otro método estático */
