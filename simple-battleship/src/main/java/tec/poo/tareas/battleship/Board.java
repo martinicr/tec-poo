@@ -24,12 +24,12 @@ public class Board {
     public static Board defaultBoardSetup() {
         var board = new Board();
         var cabista = new Battleship("cabista", 3);
-        var poniez = new Battleship("poniez", 3);
+//        var poniez = new Battleship("poniez", 3);
 //        var hacqui = new Battleship("hacqui", 3);
 
 //        this.battleshipsInBoard = new ArrayList<>();
         board.addShipToBoard(cabista, 1, 0, ShipAligment.VERTICAL);
-        board.addShipToBoard(poniez, 1, 2, ShipAligment.VERTICAL);
+//        board.addShipToBoard(poniez, 1, 2, ShipAligment.VERTICAL);
 
         return board;
     }
