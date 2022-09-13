@@ -3,6 +3,8 @@ package tec.poo.clases.comportamiento;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
+import java.util.Optional;
+
 import static org.assertj.core.api.Assertions.*;
 
 public class FooTest {
@@ -30,6 +32,15 @@ public class FooTest {
         Foo foo = new Foo();
         Bar bar = null;
 
+        // Esta invocación causa NullPointerException
+        // foo.someOtherMethod(bar);
+
+//        try {
+//            foo.someOtherMethod(bar);
+//        } catch (Exception ex) {
+//
+//        }
+
         Assertions.assertThrows(NullPointerException.class, () -> {
             foo.someOtherMethod(bar);
         });
@@ -49,6 +60,15 @@ public class FooTest {
         no. A partir de Java 8 se introdujo la clase Optional que es muy útil
         para esto.
          */
+    }
+
+    @Test
+    public void nullSafeWithOptional() {
+
+        Foo foo = new Foo();
+        Bar bar = null;
+        
+        foo.nullSafeWithOptional(Optional.ofNullable(bar));
     }
 
 }

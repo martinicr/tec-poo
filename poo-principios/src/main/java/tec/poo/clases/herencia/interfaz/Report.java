@@ -8,6 +8,8 @@ public class Report {
 
     private String title;
 
+    private String[] details;
+
     public String getTitle() {
         return title;
     }
@@ -15,8 +17,6 @@ public class Report {
     public void setTitle(String title) {
         this.title = title;
     }
-
-    private String[] details;
 
     public Date getReportDate() {
         return reportDate;

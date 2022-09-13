@@ -5,6 +5,8 @@ public class ReportManager {
     private Printable printable;
 
     public ReportManager(Printable printable) {
+        // validar printable is not null
+        // o proporcinar uno por default
         this.printable = printable;
     }
 

@@ -1,5 +1,7 @@
 package tec.poo.clases.comportamiento;
 
+import java.util.Optional;
+
 public class Foo {
 
     private int number;
@@ -39,8 +41,12 @@ public class Foo {
         if(bar != null) {
             bar.doSomething();
         }
+    }
 
-
+    public void nullSafeWithOptional(Optional<Bar> bar) {
+        if(bar.isPresent()) {
+            bar.get().doSomething();
+        }
     }
 
     private int stepOne() {
