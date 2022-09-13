@@ -22,14 +22,13 @@ public class HelloWorldView {
 
         JPanel panel = new JPanel();
 
-        this.label = new JLabel();
-        label = new JLabel("Nothing to say!");
-        label.setBounds(10,10,300, 50);  
-        label.setVerticalAlignment(JLabel.TOP);
-        label.setFont(new Font("Verdana", Font.PLAIN, 20));
+        this.label = new JLabel("Nothing to say!");
+        this.label.setBounds(10,10,300, 50);  
+        this.label.setVerticalAlignment(JLabel.TOP);
+        this.label.setFont(new Font("Verdana", Font.PLAIN, 20));
         
         this.button = new JButton("Say Hi!");
-        button.setBounds(130,100,100, 50);  
+        this.button.setBounds(130,100,100, 50);  
         this.button.addActionListener(new ActionListener(){  
             public void actionPerformed(ActionEvent e){  
                 DisplayHelloWorld();  
